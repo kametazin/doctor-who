@@ -14,9 +14,11 @@ background-color: rgba(4, 5, 33);
 }
 .carousel-item {
     width: 100%;
+    position: relative;
 }
 .carousel-item > img {
     margin-top: -5rem;
+    height: 150%;
 }
 .carousel-indicators {
     justify-content: flex-end;
@@ -39,4 +41,9 @@ background-color: rgba(4, 5, 33);
 .carousel-indicators .active {
     background-color: #FFC67E;
     border: 3px solid #FFC67E;
+}
+h1.position-absolute {
+    top: 13.4rem;
+    left: 8.8rem;
+    font-size: 5rem;
 }
