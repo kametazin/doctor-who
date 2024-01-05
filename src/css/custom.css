@@ -18,3 +18,8 @@ background-color: rgba(4, 5, 33);
 .carousel-item > img {
     margin-top: -5rem;
 }
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
