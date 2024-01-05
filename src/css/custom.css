@@ -47,3 +47,14 @@ h1.position-absolute {
     left: 8.8rem;
     font-size: 5rem;
 }
+button.position-absolute {
+    top: 24.0625rem;
+    left: 8.8rem;
+    font-size: 1.625rem;
+    word-wrap: break-word;
+    background-color: #FFC67E;
+    border-radius: 50px;
+    border: none;
+    width: 13.2813rem;
+    height: 4rem;
+}
