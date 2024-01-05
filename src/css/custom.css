@@ -18,6 +18,9 @@ background-color: rgba(4, 5, 33);
 .carousel-item > img {
     margin-top: -5rem;
 }
+.carousel-indicators {
+    justify-content: flex-end;
+}
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
