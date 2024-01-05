@@ -18,8 +18,22 @@ background-color: rgba(4, 5, 33);
 .carousel-item > img {
     margin-top: -5rem;
 }
-.carousel-indicators li {
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
     width: 10px;
     height: 10px;
-    border-radius: 100%;
-  }
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-clip: padding-box;
+    border: 3px solid white;
+    background: none;
+    transition: opacity .6s ease;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background-color: #FFC67E;
+    border: 3px solid #FFC67E;
+}
