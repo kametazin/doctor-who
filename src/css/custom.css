@@ -9,6 +9,12 @@ background-color: rgba(4, 5, 33);
 .nav-item > a {
     color: white;
 }
+.carousel-inner {
+    height: 80vh;
+}
 .carousel-item {
     width: 100%;
+}
+.carousel-item > img {
+    margin-top: -5rem;
 }
