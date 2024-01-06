@@ -113,19 +113,19 @@
                 cardImg.alt = doctor.doctor;
 
                 const cardBody = document.createElement("div");
-                cardBody.className = "card-body";
+                cardBody.className = "card-body my-5";
 
                 const cardTitle = document.createElement("h5");
                 cardTitle.className = "card-title my-4";
                 cardTitle.textContent = doctor.doctor;
 
                 const cardText = document.createElement("p");
-                cardText.className = "card-text text-start";
-                cardText.textContent = `Actor: ${doctor.actor}\nScreen Time: ${doctor.screen_time}`;
+                cardText.className = "card-text text-start my-2 font-italic";
+                cardText.textContent = `${doctor.actor} \n ${doctor.screen_time}`;
 
                 const cardLink = document.createElement("a");
                 cardLink.href = "#";
-                cardLink.className = "btn button";
+                cardLink.className = "btn button custombtn";
                 cardLink.textContent = "Ver más";
 
                 cardBody.appendChild(cardTitle);

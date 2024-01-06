@@ -163,8 +163,16 @@ body {
 }
 .card-text {
     font-size: 26px;
+    font-style: italic;
 }
 .customimg {
     height: 383px;
     width: fit-content;
+}
+.custombtn {
+    background-color: #FFC67E;
+    color: black;
+    font-weight: 600;
+    width: 219px;
+    border-radius: 50px;
 }
