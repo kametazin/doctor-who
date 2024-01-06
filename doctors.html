@@ -28,8 +28,8 @@
                 </a>
                 <form class="d-flex" role="search">
                     <img class="icon-search" src="./assets/img/icons/material-symbols-light_search.svg" alt="buscar icon" width="13.65px">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  </form>
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                </form>                
                   <ul class="navbar-nav d-flex flex-row">
                     <li class="nav-item me-3 me-lg-0">
                         <a class="nav-link" href="#">
@@ -92,7 +92,7 @@
         </ul>
     </footer>
     
-    <script>
+    <!-- /** <script>
         document.addEventListener("DOMContentLoaded", async function () {
             const response = await fetch('doctors.json');
             const doctorsData = await response.json();
@@ -113,7 +113,7 @@
                 cardImg.alt = doctor.doctor;
 
                 const cardBody = document.createElement("div");
-                cardBody.className = "card-body my-5";
+                cardBody.className = "card-body my-5 e";
 
                 const cardTitle = document.createElement("h5");
                 cardTitle.className = "card-title my-4";
@@ -140,7 +140,80 @@
                 doctorsContainer.appendChild(cardCol);
             });
         });
+    </script>*//-->
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            const response = await fetch('doctors.json');
+            const originalDoctorsData = await response.json();
+            let displayedDoctorsData = [...originalDoctorsData.doctors];
+    
+            const doctorsContainer = document.getElementById("doctorsContainer");
+            const searchInput = document.getElementById("searchInput");
+    
+            // Function to filter doctors based on search term
+            const filterDoctors = () => {
+                const searchTerm = searchInput.value.toLowerCase();
+                displayedDoctorsData = originalDoctorsData.doctors.filter(doctor => 
+                    doctor.doctor.toLowerCase().includes(searchTerm) ||
+                    doctor.actor.toLowerCase().includes(searchTerm) ||
+                    doctor.screen_time.toLowerCase().includes(searchTerm)
+                );
+                renderDoctors();
+            };
+    
+            // Function to render doctors based on the filtered data
+            const renderDoctors = () => {
+                doctorsContainer.innerHTML = "";
+                displayedDoctorsData.forEach(doctor => {
+                    const cardCol = document.createElement("div");
+                    cardCol.className = "col";
+    
+                    const card = document.createElement("div");
+                    card.className = "card";
+                    card.style = "width: 16.5rem;";
+    
+                    const cardImg = document.createElement("img");
+                    cardImg.src = doctor.image;
+                    cardImg.className = "card-img-top customimg";
+                    cardImg.alt = doctor.doctor;
+    
+                    const cardBody = document.createElement("div");
+                    cardBody.className = "card-body my-5";
+    
+                    const cardTitle = document.createElement("h5");
+                    cardTitle.className = "card-title my-4";
+                    cardTitle.textContent = doctor.doctor;
+    
+                    const cardText = document.createElement("p");
+                    cardText.className = "card-text text-start my-2 font-italic";
+                    cardText.textContent = `${doctor.actor} \n ${doctor.screen_time}`;
+    
+                    const cardLink = document.createElement("a");
+                    cardLink.href = "#";
+                    cardLink.className = "btn button custombtn mb-0";
+                    cardLink.textContent = "Ver más";
+    
+                    cardBody.appendChild(cardTitle);
+                    cardBody.appendChild(cardText);
+                    cardBody.appendChild(cardLink);
+    
+                    card.appendChild(cardImg);
+                    card.appendChild(cardBody);
+    
+                    cardCol.appendChild(card);
+    
+                    doctorsContainer.appendChild(cardCol);
+                });
+            };
+    
+            // Initial render
+            renderDoctors();
+    
+            // Add event listener for input change
+            searchInput.addEventListener("input", filterDoctors);
+        });
     </script>
+    
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
