@@ -64,7 +64,6 @@ footer {
 }
 .main {
     background-color: #040521;
-    position: relative;
 }
 .main > img {
     bottom: 0px;
@@ -75,4 +74,36 @@ footer {
 }
 .custom-img2 {
     right: 300px;
+}
+h1, p {
+    z-index: 999;
+    word-wrap: break-word;
+    text-align: center;
+    position: relative;
+}
+p {
+    font-size: 1.625rem;
+}
+.col > img {
+    position: relative;
+    z-index: 9999;
+    height: 42.375rem;
+    width: auto;
+}
+.custom-button {
+    font-size: 1.625rem;
+    word-wrap: break-word;
+    background-color: #FFC67E;
+    border-radius: 50px;
+    border: none;
+    width: 13.2813rem;
+    height: 4rem;
+    z-index: 999;
+    position: relative;
+    align-self: center;
+}
+.center-block {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
 }
