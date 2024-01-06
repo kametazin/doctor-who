@@ -62,3 +62,17 @@ footer {
     background-color: #040521;
     width: 100vw;
 }
+.main {
+    background-color: #040521;
+    position: relative;
+}
+.main > img {
+    bottom: 0px;
+    position: absolute;
+}
+.custom-img1 {
+    left: 100px;
+}
+.custom-img2 {
+    right: 300px;
+}
