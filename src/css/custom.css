@@ -139,3 +139,15 @@ input, textarea {
     background-clip: padding-box;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.ph1 {
+    top: 100px;
+    left: 120px;
+}
+.ph2 {
+    left: 250px;
+    bottom: 55px;
+}
+.ph3 {
+    left: 120px;
+    top: 300px;
+}
