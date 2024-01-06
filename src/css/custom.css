@@ -164,3 +164,7 @@ body {
 .card-text {
     font-size: 26px;
 }
+.customimg {
+    height: 383px;
+    width: fit-content;
+}

@@ -56,7 +56,7 @@
         </div>
     </nav>
     <div class="container">
-        <h1 class="text-start text-white">Doctores</h1>
+        <h1 class="text-start text-white mb-5 px-2">Doctores</h1>
         <div class="container">
             <div class="row row-cols-4" id="doctorsContainer">
                 
@@ -99,7 +99,6 @@
 
             const doctorsContainer = document.getElementById("doctorsContainer");
 
-            // Iterate over the doctors and create card elements
             doctorsData.doctors.forEach(doctor => {
                 const cardCol = document.createElement("div");
                 cardCol.className = "col";
@@ -110,18 +109,18 @@
 
                 const cardImg = document.createElement("img");
                 cardImg.src = doctor.image;
-                cardImg.className = "card-img-top";
+                cardImg.className = "card-img-top customimg";
                 cardImg.alt = doctor.doctor;
 
                 const cardBody = document.createElement("div");
                 cardBody.className = "card-body";
 
                 const cardTitle = document.createElement("h5");
-                cardTitle.className = "card-title";
+                cardTitle.className = "card-title my-4";
                 cardTitle.textContent = doctor.doctor;
 
                 const cardText = document.createElement("p");
-                cardText.className = "card-text";
+                cardText.className = "card-text text-start";
                 cardText.textContent = `Actor: ${doctor.actor}\nScreen Time: ${doctor.screen_time}`;
 
                 const cardLink = document.createElement("a");
