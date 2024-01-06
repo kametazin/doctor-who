@@ -64,16 +64,18 @@ footer {
 }
 .main {
     background-color: #040521;
+    position: relative;
 }
 .main > img {
-    bottom: 0px;
+    bottom: -80px;
     position: absolute;
 }
 .custom-img1 {
     left: 100px;
+    bottom: 50px;
 }
 .custom-img2 {
-    right: 300px;
+    right: 500px;
 }
 h1, p {
     z-index: 999;
@@ -83,6 +85,7 @@ h1, p {
 }
 p {
     font-size: 1.625rem;
+    margin-top: 2.1875rem;
 }
 .col > img {
     position: relative;
@@ -96,11 +99,12 @@ p {
     background-color: #FFC67E;
     border-radius: 50px;
     border: none;
-    width: 13.2813rem;
+    width: 23.5625rem;
     height: 4rem;
     z-index: 999;
     position: relative;
     align-self: center;
+    margin-top: 4.375rem;
 }
 .center-block {
     margin-left:auto;
