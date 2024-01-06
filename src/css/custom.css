@@ -10,7 +10,7 @@ background-color: rgba(4, 5, 33);
     color: white;
 }
 .carousel-inner {
-    height: 80vh;
+    height: 70vh;
 }
 .carousel-item {
     width: 100%;
@@ -57,4 +57,8 @@ button.position-absolute {
     border: none;
     width: 13.2813rem;
     height: 4rem;
+}
+footer {
+    background-color: #040521;
+    width: 100vw;
 }
