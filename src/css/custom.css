@@ -151,3 +151,16 @@ input, textarea {
     left: 120px;
     top: 300px;
 }
+body {
+    background-color: #040521;
+}
+.card {
+    background-color: #040521;
+    color: white; font-size: 26px;
+}
+.card-title {
+    font-size: 30px;
+}
+.card-text {
+    font-size: 26px;
+}
