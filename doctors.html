@@ -14,13 +14,13 @@
             <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
                 <ul class="navbar-nav justify-content-between ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conoce a</a>
+                        <a class="nav-link" href="./presentacion.html">Conoce a</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Doctores</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
                       </li>
                 </ul>
                 <a class="navbar-brand" href="#">
@@ -91,56 +91,6 @@
             </li>
         </ul>
     </footer>
-    
-    <!-- /** <script>
-        document.addEventListener("DOMContentLoaded", async function () {
-            const response = await fetch('doctors.json');
-            const doctorsData = await response.json();
-
-            const doctorsContainer = document.getElementById("doctorsContainer");
-
-            doctorsData.doctors.forEach(doctor => {
-                const cardCol = document.createElement("div");
-                cardCol.className = "col";
-
-                const card = document.createElement("div");
-                card.className = "card";
-                card.style = "width: 16.5rem;";
-
-                const cardImg = document.createElement("img");
-                cardImg.src = doctor.image;
-                cardImg.className = "card-img-top customimg";
-                cardImg.alt = doctor.doctor;
-
-                const cardBody = document.createElement("div");
-                cardBody.className = "card-body my-5 e";
-
-                const cardTitle = document.createElement("h5");
-                cardTitle.className = "card-title my-4";
-                cardTitle.textContent = doctor.doctor;
-
-                const cardText = document.createElement("p");
-                cardText.className = "card-text text-start my-2 font-italic";
-                cardText.textContent = `${doctor.actor} \n ${doctor.screen_time}`;
-
-                const cardLink = document.createElement("a");
-                cardLink.href = "#";
-                cardLink.className = "btn button custombtn mb-0";
-                cardLink.textContent = "Ver más";
-
-                cardBody.appendChild(cardTitle);
-                cardBody.appendChild(cardText);
-                cardBody.appendChild(cardLink);
-
-                card.appendChild(cardImg);
-                card.appendChild(cardBody);
-
-                cardCol.appendChild(card);
-
-                doctorsContainer.appendChild(cardCol);
-            });
-        });
-    </script>*//-->
     <script>
         document.addEventListener("DOMContentLoaded", async function () {
             const response = await fetch('doctors.json');
