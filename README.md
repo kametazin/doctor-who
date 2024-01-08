@@ -1,7 +1,7 @@
 # doctor-who
 # Aplicación Web Doctor Who en React.js
 
-![Doctor Who](link_to_image)
+![Doctor Who](https://i.imgur.com/d94pcG3.jpg)
 
 ## Resumen 🌌
 
